@@ -1,0 +1,219 @@
+.display-class {
+    display: none;
+}
+
+.franchise {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-bg {
+    min-width: 320px;
+    min-height: 584px;
+    width: auto;
+    border-radius: 4px ;
+    background: #ffffff;
+    border: 3px solid #ffa5ba;
+    box-shadow: 0px 2px 1px 0px #ffa5ba, 0px 1px 3px 0px #ffa5ba, 0px 1px 1px 0px #ffa5ba;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+
+.franchise-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-color: var(--cornflower);
+    border-radius: 50%;
+    border: 1px solid #ffa5ba;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-button {
+    fill: #ffa5ba;
+
+
+}
+
+.franchise-close:hover,
+.franchise-close:focus {
+    background-color: #ffa5ba;
+    border: none;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close-svg {
+    fill: #ffa5ba;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-svg:hover,
+.close-svg:focus {
+    fill: #ffffff;
+}
+
+.franchise-title {
+    color: var(--text-color-2);
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 186%;
+    letter-spacing: 0.64px;
+    width: 350px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+
+}
+
+.input-footer {
+    /* max-width: 65%;
+    height: 40px; */
+    border-radius: 4px;
+    border: 1px solid var(--WHITE, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    background: var(--NAVY-BLUE, #2E2F42);
+}
+
+.inp {
+    display: inline-block;
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 1px solid var(--NAVY-BLUE-franchise, rgba(46, 47, 66, 0.40));
+    padding-left: 38px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+
+.franchise-field {
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-label {
+    display: block;
+}
+
+.comment-field {
+    width: 360px;
+    height: 120px;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 4px;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.comment-field:focus {
+    border-color: #ffa5ba;
+}
+
+
+
+textarea {
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-franchise, rgba(46, 47, 66, 0.40));
+}
+
+.franchise-field-container {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.align-comment-field {
+    margin-bottom: 16px;
+}
+
+.input-container {
+    position: relative;
+
+}
+
+.inp:focus {
+    border-color: #ffa5ba;
+}
+
+.franchise-submit-button{
+    width: 100px;
+    height: 44px;
+    border-radius: 22px;
+    background: #FFF;
+    color: #D41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #ffa5ba;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.franchise-submit-button:hover,
+.franchise-submit-button:focus{
+    background-color: #ffa5ba;
+}
+
+.franchise-field-alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
